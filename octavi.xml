@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build repos -->
+  <project path="build/make" name="android_build" groups="pdk" remote="octavi" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="octavi" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="android_art" remote="octavi" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="octavi" />
+  <project path="manifest" name="android_manifest" remote="octavi" />
+
+  <!-- Bootable repos -->
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="octavi" />
+
+  <!-- External repos -->
+  <project path="external/json-c" name="android_external_json-c" remote="octavi" />
+  <project path="external/selinux" name="android_external_selinux" remote="octavi" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
+  <project path="external/tinyxml" name="android_external_tinyxml" remote="octavi" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="octavi" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="octavi" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="octavi" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="octavi" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="octavi" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="octavi" revision="octavi-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="octavi" revision="octavi-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom" remote="octavi" revision="octavi-13.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="octavi" revision="octavi-13.0-caf"/>
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octavi" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="octavi" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="octavi" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octavi" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="octavi" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="octavi" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="octavi" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="octavi" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octavi" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/tools-extras" name="android_prebuilts_tools-extras" remote="octavi" />
+
+  <!-- System repos -->
+  <project path="system/core" name="android_system_core" remote="octavi" />
+  <project path="system/vold" name="android_system_vold" remote="octavi" />
+
+  <!-- Tools repos -->
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="octavi" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/octavi" name="android_vendor_octavi" remote="octavi" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="octavi" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="octavi" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="octavi" />
+  <project path="vendor/support" name="android_vendor_support" remote="octavi" />
+
+</manifest>

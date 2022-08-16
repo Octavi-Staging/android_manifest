@@ -2,11 +2,24 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-13.0.0_r3"
            remote="aosp"
+           sync-c="true"
+           sync-d="true"
+           sync-f="true"
            sync-j="4" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-Staging"
+           revision="refs/heads/thirteen" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r3" />
   <contactinfo bugurl="go/repo-bug" />
@@ -1167,4 +1180,9 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
+
+  <!-- ArrowOS changes -->
+  <include name="remove.xml" />
+  <include name="octavi.xml" />
+  <include name="lineage.xml" />
 </manifest>
