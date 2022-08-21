@@ -22,6 +22,13 @@
   <!-- Bootable repos -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="octavi" />
 
+  <!-- Device Repos -->
+  <project path="device/octavi/sepolicy" name="android_device_octavi_sepolicy" remote="octavi" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="octavi" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="octavi" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="octavi" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="octavi" />
+
   <!-- External repos -->
   <project path="external/json-c" name="android_external_json-c" remote="octavi" />
   <project path="external/selinux" name="android_external_selinux" remote="octavi" />
@@ -67,6 +74,7 @@
   <!-- System repos -->
   <project path="system/core" name="android_system_core" remote="octavi" />
   <project path="system/vold" name="android_system_vold" remote="octavi" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
 
   <!-- Tools repos -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="octavi" />
