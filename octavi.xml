@@ -115,4 +115,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="octavi" />
   <project path="vendor/support" name="android_vendor_support" remote="octavi" />
 
+  <!-- Proton Clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" clone-depth="1" revision="master" remote="github" />
+
 </manifest>
