@@ -6,6 +6,8 @@
            review="https://review.lineageos.org/"
            revision="refs/heads/lineage-19.1" />
 
+  <!-- Prebuilt Repos -->
+
   <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" clone-depth="1" remote="lineage" />
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" clone-depth="1" remote="lineage" />
@@ -14,6 +16,8 @@
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" clone-depth="1" remote="lineage" />
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
 
+  <!-- External Repos -->
+
   <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="lineage" />
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="lineage" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="lineage" />
@@ -21,6 +25,8 @@
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/mksh" name="android_external_mksh" remote="lineage" />   
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" revision="lineage-18.1" remote="lineage" />
+
+  <!-- Hardware Repos -->
 
   <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="lineage" />
   <project path="hardware/qcom/data/ipacfg-mgr" name="android_hardware_qcom_data_ipacfg-mgr" remote="lineage" />
@@ -31,6 +37,12 @@
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-19.1-caf" remote="lineage" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,pdk-qcom" remote="lineage" />
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="qcom,pdk-qcom" remote="lineage" />
+
+  <!-- Packages Repos -->
+
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+
+  <!-- Vendor repos -->
 
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="lineage" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="lineage" />
