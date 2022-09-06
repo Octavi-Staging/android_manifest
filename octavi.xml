@@ -103,6 +103,7 @@
   <project path="system/vold" name="android_system_vold" remote="octavi" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="octavi" />
   <project path="system/security" name="android_system_security" remote="octavi" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="octavi" />
   <!-- Tools repos -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="octavi" />
 
