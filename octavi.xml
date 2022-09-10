@@ -90,8 +90,10 @@
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="octavi" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="octavi" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="octavi" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="octavi" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="octavi" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="octavi" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="octavi" />
 
