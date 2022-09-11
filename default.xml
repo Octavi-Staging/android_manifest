@@ -21,6 +21,10 @@
            fetch="https://github.com/Octavi-Staging"
            revision="refs/heads/thirteen" />
 
+  <remote  name="octavi-gitlab"
+           fetch="https://gitlab.com/Octavi-Staging"
+           revision="refs/heads/thirteen" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r4" />
   <contactinfo bugurl="go/repo-bug" />
 

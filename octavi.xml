@@ -112,6 +112,7 @@
 
   <!-- Vendor repos -->
   <project path="vendor/octavi" name="android_vendor_octavi" remote="octavi" />
+  <project path="vendor/gapps" name="android_vendor_gapps" remote="octavi-gitlab" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="octavi" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="octavi" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="octavi" />
