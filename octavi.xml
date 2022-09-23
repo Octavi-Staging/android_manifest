@@ -86,6 +86,7 @@
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="octavi" />
   <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" remote="octavi" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="octavi" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="octavi" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="octavi" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="octavi" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="octavi" />
