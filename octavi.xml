@@ -76,6 +76,7 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="octavi" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="octavi" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="octavi" />
+  <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="octavi" />
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="octavi" />
 
   <!-- Packages repos -->
