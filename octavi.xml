@@ -35,9 +35,12 @@
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr-legacy-um" remote="octavi" />
 
   <!-- External repos -->
+  <project path="external/AndroidSystemBlur" name="android_external_AndroidSystemBlur" remote="octavi" />
+  <project path="external/colorkt" name="android_external_colorkt" remote="octavi" />
   <project path="external/json-c" name="android_external_json-c" remote="octavi" />
   <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
   <project path="external/selinux" name="android_external_selinux" remote="octavi" />
+  <project path="external/themelib" name="android_external_themelib" remote="octavi" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="octavi" />
   <project path="external/tinyxml" name="android_external_tinyxml" remote="octavi" />
 
