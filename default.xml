@@ -2,11 +2,29 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+
   <default revision="refs/tags/android-14.0.0_r2"
            remote="aosp"
-           sync-j="4" />
+           sync-c="true"
+           sync-d="true"
+           sync-f="true"
+           sync-j="8" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-Staging"
+           revision="refs/heads/thirteen" />
+
+  <remote  name="octavi-gitlab"
+           fetch="https://gitlab.com/Octavi-Staging"
+           revision="refs/heads/thirteen" />
 
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r2"/>
   <contactinfo bugurl="go/repo-bug" />
@@ -1260,4 +1278,9 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+
+  <!-- Custom changes -->
+  <include name="remove.xml" />
+  <include name="octavi.xml" />
+  <include name="lineage.xml" />
 </manifest>
