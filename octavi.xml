@@ -18,16 +18,20 @@
   <project path="manifest" name="android_manifest" revision="fourteen" remote="octavi" />
 
   <!-- Device Repos -->
-  <project path="device/octavi/sepolicy" name="android_device_octavi_sepolicy" remote="octavi" />
+  <project path="device/octavi/sepolicy" name="android_device_octavi_sepolicy" revision="fourteen" remote="octavi" />
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="octavi" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="octavi" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" revision="fourteen" remote="octavi" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="octavi" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="octavi" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr-legacy-um" remote="octavi" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="android_device_qcom_sepolicy_vndr-legacy-um" revision="fourteen" remote="octavi" />
+
+  <!-- External repos -->
+  <project path="external/tinycompress" name="android_external_tinycompress" revision="fourteen" remote="octavi" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" revision="fourteen" remote="octavi" />
   <project path="frameworks/base" name="android_frameworks_base" revision="fourteen" remote="octavi" />
+  <project path="frameworks/native" name="android_frameworks_native" revision="fourteen" remote="octavi" />
 
   <!-- Hardware repos -->
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="octavi" >
@@ -61,11 +65,22 @@
   <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="octavi" revision="octavi-13.0-caf-sm8350" />
   <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="octavi" revision="octavi-13.0-caf-sm8350" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="octavi" revision="octavi-13.0-caf"/>
+  <project path="hardware/interfaces" name="android_hardware_interfaces" revision="fourteen" remote="octavi" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" revision="fourteen" remote="octavi" />
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" groups="pdk" remote="octavi" />
   <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="octavi" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" revision="fourteen" remote="octavi" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="fourteen" remote="octavi" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" revision="fourteen" remote="octavi" />
+
+  <!-- System repos -->
+  <project path="system/core" name="android_system_core" revision="fourteen" remote="octavi" />
+  <project path="system/libhidl" name="android_system_libhidl" revision="fourteen" remote="octavi" />
+  <project path="system/vold" name="android_system_vold" revision="fourteen" remote="octavi" />
+  <project path="system/sepolicy" name="android_system_sepolicy" revision="fourteen" remote="octavi" />
+  <project path="system/security" name="android_system_security" revision="fourteen" remote="octavi" />
 
   <!-- Vendor repos -->
   <project path="vendor/octavi" name="android_vendor_octavi" revision="fourteen" remote="octavi" />
