@@ -34,7 +34,7 @@
   <project path="frameworks/native" name="android_frameworks_native" revision="fourteen" remote="octavi" />
 
   <!-- Hardware repos -->
-  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="octavi" >
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" revision="fourteen" remote="octavi" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
@@ -105,11 +105,12 @@
   <project path="vendor/google/pixel" name="vendor_google_pixel" revision="fourteen" remote="octavi-gitlab" />
   <project path="vendor/octavi" name="android_vendor_octavi" revision="fourteen" remote="octavi" />
   <project path="vendor/SystemUIClocks" name="android_vendor_SystemUIClocks" revision="fourteen" remote="octavi" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="octavi" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="octavi" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="octavi" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_commonsys_display" groups="qcom,pdk-qcom" remote="octavi" />
-  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" groups="qcom,pdk-qcom" remote="octavi" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="octavi" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="octavi" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="octavi-14.0" remote="octavi" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="octavi-14.0-legacy-um" remote="octavi" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="fourteen" remote="octavi" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" revision="fourteen" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_commonsys_display" revision="fourteen" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" revision="fourteen" groups="qcom,pdk-qcom" remote="octavi" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" revision="fourteen" remote="octavi" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" revision="fourteen" remote="octavi" />
 </manifest>
