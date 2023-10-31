@@ -72,8 +72,10 @@
 
   <!-- Packages repos -->
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" revision="fourteen" remote="octavi" />
+  <project path="packages/apps/OctaviLab" name="android_packages_apps_OctaviLab" revision="fourteen" remote="octavi" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="fourteen" remote="octavi" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" revision="fourteen" remote="octavi" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" revision="fourteen" remote="octavi" />
 
   <!-- System repos -->
   <project path="system/core" name="android_system_core" revision="fourteen" remote="octavi" />
@@ -83,7 +85,10 @@
   <project path="system/security" name="android_system_security" revision="fourteen" remote="octavi" />
 
   <!-- Vendor repos -->
+  <project path="vendor/google/gms" name="vendor_google_gms-new" revision="fourteen" remote="octavi-gitlab" />
+  <project path="vendor/google/pixel" name="vendor_google_pixel" revision="fourteen" remote="octavi-gitlab" />
   <project path="vendor/octavi" name="android_vendor_octavi" revision="fourteen" remote="octavi" />
+  <project path="vendor/SystemUIClocks" name="android_vendor_SystemUIClocks" revision="fourteen" remote="octavi" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="octavi" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="octavi" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" remote="octavi" />
