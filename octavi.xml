@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Rootdir -->
+  <project path="bionic" name="android_bionic" groups="pdk" revision="fourteen" remote="octavi" />
+
   <!-- Build repos -->
   <project path="build/make" name="android_build" groups="pdk" revision="fourteen" remote="octavi" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
