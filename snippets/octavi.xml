@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build -->
+  <project path="build/make" name="android_build_make" remote="github" revision="16" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="github" revision="16" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="android_art" remote="github" revision="16" />
+  <project path="bionic" name="android_bionic" remote="github" revision="16" />
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" remote="github" revision="16" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="16" />
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="github" revision="16" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="github" revision="16" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr_legacy-um" remote="github" revision="16" />
+  <project path="device/octavi/sepolicy" name="android_device_octavi_sepolicy" remote="github" revision="16" />
+
+  <!-- External -->
+  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="github" revision="16" />
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="github" revision="16" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="github" revision="16" />
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="github" revision="16" />
+  <project path="external/dtc" name="android_external_dtc" remote="github" revision="16" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="github" revision="16" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="github" revision="16" />
+  <project path="external/json-c" name="android_external_json-c" remote="github" revision="16" />
+  <project path="external/mksh" name="android_external_mksh" remote="github" revision="16" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="github" revision="16" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="github" revision="16" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="github" revision="16" />
+  <project path="external/external_v4l-utils" name="android_external_v4l-utils" remote="github" revision="16" />
+
+  <!-- Framework -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="16" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="16" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="16" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="github" revision="16" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="github" revision="16" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="16" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="github" revision="16" />
+  <project path="hardware/octavi/interfaces" name="android_hardware_octavi_interfaces" remote="github" revision="16" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="github" revision="16" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" remote="github" revision="16" />
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="github" revision="16" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="15-sm8150" remote="github" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="github" revision="16" />
+
+  <!-- Kernel -->
+  <project path="kernel/configs" name="android_kernel_configs" remote="github" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="github" revision="16" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="github" revision="16" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="github" revision="16" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="github" revision="16" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="github" revision="16" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_connectivity" remote="gitlab" />
+
+  <!-- System -->
+  <project path="system/bpf" name="android_system_bpf" remote="github" revision="16" />
+  <project path="system/core" name="android_system_core" remote="github" revision="16" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="github" revision="16" />
+  <project path="system/media" name="android_system_media" remote="github" revision="16" />
+  <project path="system/netd" name="android_system_netd" remote="github" revision="16" />
+  <project path="system/security" name="android_system_security" remote="github" revision="16" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="github" revision="16" />
+
+  <!-- Vendor -->
+  <project path="vendor/octavi" name="android_vendor_octavi" remote="github" revision="16" />
+
+</manifest>
